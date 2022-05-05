@@ -1,0 +1,103 @@
+{
+    "kerdesek": [
+        {
+            "kerdes": "A műanyagot milyen színű szelektív kukába gyűjtjük?",
+            "v1": "citromsárga",
+            "v2": "kék",
+            "v3": "zöld",
+            "helyesv": "v1",
+            "pont": 1,
+            "tipus": "Alt.isk"
+        },
+        {
+            "kerdes": "A papírt milyen színű szelektív kukába gyűjtjük?",
+            "v1": "kék",
+            "v2": "piros",
+            "v3": "szürke",
+            "helyesv": "v1",
+            "pont": 1,
+            "tipus": "Alt.isk"
+        },
+        {
+            "kerdes": "Az üveget milyen színű szelektív kukába gyűjtjük?",
+            "v1": "zöld",
+            "v2": "lila",
+            "v3": "citromsárga",
+            "helyesv": "v1",
+            "pont": 1,
+            "tipus": "Alt.isk"
+        },
+        {
+            "kerdes": "A fémet milyen színű szelektív kukába gyűjtjük?",
+            "v1": "szürke",
+            "v2": "kék",
+            "v3": "narancssárga",
+            "helyesv": "v1",
+            "pont": 1,
+            "tipus": "Alt.isk"
+        },
+        {
+            "kerdes": "Milyen színűek a szelektív kukák?",
+            "v1": "citromsárga, kék, szürke, zöld",
+            "v2": "piros, kék, zöld, fekete",
+            "v3": "citromsárga, zöld, lila, rózsaszín",
+            "helyesv": "v1", 
+            "pont": 1,
+            "tipus": "Alt.isk"
+        },
+        {
+            "kerdes": "A felsorolás között mi a legkörnyezetbarátabb közlekedés?",
+            "v1": "séta",
+            "v2": "vonat",
+            "v3": "autó",
+            "helyesv": "v1", 
+            "pont": 1,
+            "tipus": "Alt.isk"
+        },
+        {
+            "kerdes": "A felsorolás között melyik a takarékosabb?",
+            "v1": "zuhanyzás",
+            "v2": "habfürdő, pancsolás kádban",
+            "v3": "fürdőszobából vízipark csinálás",
+            "helyesv": "v1",
+            "pont": 1,
+            "tipus": "Alt.isk"
+        },
+        {
+            "kerdes": "Miket komposztálhatunk?",
+            "v1": "zöldség - gyümölcs maradék, tojáshéj",
+            "v2": "nagy ágak, fatörzsek, diófalevél",
+            "v3": "fém, műanyag, vegyszeres dolgok",
+            "helyesv": "v1",
+            "pont": 1,
+            "tipus": "Alt.isk"
+        },
+        {
+            "kerdes": "Fogmosásnál... ",
+            "v1": " elzárom a csapot, ha már nem kell víz",
+            "v2": "nem zárom el a csapot, hadd folyjon",
+            "v3": "ki tekerem tejlesen, mert miért ne",
+            "helyesv": "v1",
+            "pont": 1,
+            "tipus": "Alt.isk"
+        },
+        {
+            "kerdes": "Közlekedésnél....",
+            "v1": "ha lehet biciklizek",
+            "v2": "autózom",
+            "v3": "tömegközlekedést használok",
+            "helyesv": "v1",
+            "pont": 1,
+            "tipus": "Alt.isk"
+        },
+        {
+            "kerdes": "Az okostelefont...",
+            "v1": "csak 2-3 évente cserélem",
+            "v2": "évente cserélem",
+            "v3": "amikor van egy jobb akkor azt rögtön megveszem",
+            "helyesv": "v1",
+            "pont": 1,
+            "tipus": "Alt.isk"
+        }
+    ]
+}
