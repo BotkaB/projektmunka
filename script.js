@@ -4,7 +4,6 @@ function $(elem) {
   
 }
 
-
 function init(){
   fetch("kerdes.json")
     .then((response) => response.json())
