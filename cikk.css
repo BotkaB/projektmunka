@@ -1,0 +1,27 @@
+article{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+*{box-sizing: border-box;}
+div {
+    flex: 2 2 100px;
+    /*width: 100px;*/
+  }
+  div:first-child {
+    color: black;
+    flex: 0 2 auto;
+  }
+  
+  #masodik{
+      order: 1;
+  }
+  div {
+    border: 1px solid gray;
+    padding: 10px;
+    text-align: justify;
+    font-size: 10px;
+  }
+  
