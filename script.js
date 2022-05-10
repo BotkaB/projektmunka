@@ -22,6 +22,12 @@ function init() {
       console.log(data.cikkek)
       feldolgoz2(data.cikkek)
     })
+    fetch("galeria.json")
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data.galeria)
+      feldolgoz2(data.galeria)
+    })
 }
 function feldolgoz(kerdesek) {
   var txt = ''
@@ -55,4 +61,21 @@ function feldolgoz2(cikkek) {
 
   console.log(txt2);
   CLASS('cikkek')[0].innerHTML = txt2;
+}
+
+function feldolgoz3(galeria) {
+  var txt3 = ''
+  cikkek.forEach(function (gal) {
+
+    txt3 += '<ul>'
+    for (const key in gal) {
+      txt3 += `<li><span>${key}:</span><span> ${gal[key]}</span></li>`
+      
+    }
+
+    txt3 += '</ul>'
+  })
+
+  console.log(txt3);
+  CLASS('galeria')[0].innerHTML = txt3;
 }
