@@ -1,6 +1,7 @@
 {
     "galeria": [
         {
+            "szerző": "Zsák Krisztián",
             "képcím": "Elso modell",
             "fotós": "Való Sándor",
             "tervező": "Valaki",
@@ -14,6 +15,7 @@
         ]
         },
         {
+            "szerző": "Zsák Krisztián",
             "képcím": "Masodik modell",
             "fotós": "Fotós Iván",
             "tervező": "Valaki2",
@@ -27,6 +29,7 @@
         ]
         },
         {
+            "szerző": "Zsák Krisztián",
             "képcím": "Harmadik modell",
             "fotós": "Mekk Elek",
             "tervező": "Valaki3",
@@ -40,6 +43,7 @@
         ]
         },
         {
+            "szerző": "Zsák Krisztián",
             "képcím": "Negyedik modell",
             "fotós": "Er Egyide",
             "tervező": "Valaki4",
@@ -53,6 +57,7 @@
         ]
         },
         {
+            "szerző": "Zsák Krisztián",
             "képcím": "Otodik modell",
             "fotós": "Val Amir",
             "tervező": "Valaki5",
