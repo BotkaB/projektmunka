@@ -1,0 +1,18 @@
+{
+    "galeria": [
+        {
+            "képcím": "a",
+            "fotós": "a",
+            "tervező": "a",
+            "modell": "a",
+            "leírás": "a",
+            "nezet": [
+                { "kep1":"asd"},
+                { "kep2":"asd"},
+                { "kep3":"asd"},
+                { "kep4":"asd"}
+        ]
+        }
+
+    ]
+}
