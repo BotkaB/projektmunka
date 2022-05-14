@@ -13,7 +13,7 @@ function $(elem) {
 }
 
 function init() {
-
+    
     ID("cim").innerHTML = "<h1>Fenntarthatósági témahét</h1>";
 
     fetch("teszt.json")
@@ -48,3 +48,4 @@ function olvasas(teszt) {
    
 
 }
+
