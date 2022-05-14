@@ -24,45 +24,51 @@ function init() {
 function valasztas(event) {
     ID("gomb1").onclick = function () {
         console.log("katt");
-        olvasas1();
+        olvasas1("altisk");
     };
 
     ID("gomb2").onclick = function () {
         console.log("katt");
-        olvasas2();
+        olvasas1("kozepisk");
     }
     ID("gomb3").onclick = function () {
         console.log("katt");
-        olvasas3();
+        olvasas1("ffelnott");
     }
     
 }
 
-function olvasas1(teszt) {
-    var txt1 = ''
+var teszt = [];
+
+function olvasas1(kulcs) {
+    
 
     fetch("teszt.json")
         .then((response) => response.json())
         .then((data) => {
+
            
-            olvasas1(data.altisk)
+            megjelenit(data[kulcs])
 
         })
+ 
+}
 
-    teszt.forEach(function (altisk) {
+function megjelenit(teszt){
+    console.log(teszt)
+    var txt1 = ''
+    teszt.forEach(function (elem) {
 
         txt1 += '<ul>'
 
-        txt1 += `<span> ${altisk.kerdes}</span>` + `<ul><button> ${altisk.v1}</button></ul>` + `<ul><button> ${altisk.v2}</button></ul>` + `<ul><button> ${altisk.v3}</button><ul>`;
+        txt1 += `<li> ${elem.kerdes}</li>` + `<li><button> ${elem.v1}</button></li>` + `<li><button> ${elem.v2}</button></li>` + `<li><button> ${elem.v3}</button></li>`;
 
         txt1 += '</ul>'
     })
-
-
     CLASS('kerdesek')[0].innerHTML = txt1;
 }
 
-function olvasas2(teszt) {
+/* function olvasas2(teszt) {
 
     var txt2 = ''
     fetch("teszt.json")
@@ -78,7 +84,7 @@ function olvasas2(teszt) {
 
         txt2 += '<ul>'
 
-        txt2 += `<span> ${kozepisk.kerdes}</span>` + `<ul><button> ${kozepisk.v1}</button></ul>` + `<ul><button> ${kozepisk.v2}<button></ul>` + `<ul><button> ${kozepisk.v3}<button></ul>`;
+        txt2 += `<li> ${kozepisk.kerdes}</li>` + `<li><button> ${kozepisk.v1}</button></li>` + `<li><button> ${kozepisk.v2}<button></li>` + `<li><button> ${kozepisk.v3}<button></li>`;
 
         txt2 += '</ul>'
     })
@@ -102,12 +108,12 @@ function olvasas3(teszt) {
 
         txt3 += '<ul>'
 
-        txt3 += `<span> ${ffelnott.kerdes}</span>` + `<ul><button> ${ffelnott.v1}</button></ul>` + `<ul><button> ${ffelnott.v2}</button></ul>` + `<ul><button> ${ffelnott.v3}</button></ul>`;
+        txt3 += `<li><span> ${ffelnott.kerdes}</span></li>` + `<li><button> ${ffelnott.v1}</button></li>` + `<li><button> ${ffelnott.v2}</button></li>` + `<li><button> ${ffelnott.v3}</button></li>`;
 
         txt3 += '</ul>'
     })
     CLASS('kerdesek')[0].innerHTML = txt3;
-}
+} */
 
 function megoldas(teszt){
     CLASS(kerdesek)[0].$("button").forEach(function (elem) {

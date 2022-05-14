@@ -90,7 +90,7 @@ footer{
 
 }
 
-nav li{
+nav li, li{
     list-style-type: none;
   
 }
