@@ -8,10 +8,10 @@
             "modell": "Szúrnám Agyon",
             "leírás": "18+ lenne",
             "nezet": [
-                { "kep1":"galeria/1_1.jpg"},
-                { "kep2":"galeria/1_2.jpg"},
-                { "kep3":"galeria/1_3.jpg"},
-                { "kep4":"galeria/1_4.jpg"}
+                "galeria/1_1.jpg",
+                "galeria/1_2.jpg",
+                "galeria/1_3.jpg",
+                "galeria/1_4.jpg"
         ]
         },
         {
@@ -22,10 +22,10 @@
             "modell": "Szúrnám Agyon 2",
             "leírás": "18+ lenne",
             "nezet": [
-                { "kep1":"galeria/2_1.jpg"},
-                { "kep2":"galeria/2_2.jpg"},
-                { "kep3":"galeria/2_3.jpg"},
-                { "kep4":"galeria/2_4.jpg"}
+                "galeria/2_1.jpg",
+                "galeria/2_2.jpg",
+                "galeria/2_3.jpg",
+                "galeria/2_4.jpg"
         ]
         },
         {
@@ -36,10 +36,10 @@
             "modell": "Szúrnám Agyon 3",
             "leírás": "18+ lenne",
             "nezet": [
-                { "kep1":"galeria/3_1.jpg"},
-                { "kep2":"galeria/3_2.jpg"},
-                { "kep3":"galeria/3_3.jpg"},
-                { "kep4":"galeria/3_4.jpg"}
+                "galeria/3_1.jpg",
+                "galeria/3_2.jpg",
+                "galeria/3_3.jpg",
+                "galeria/3_4.jpg"
         ]
         },
         {
@@ -50,26 +50,13 @@
             "modell": "Szúrnám Agyon 4",
             "leírás": "18+ lenne",
             "nezet": [
-                { "kep1":"galeria/4_1.jpg"},
-                { "kep2":"galeria/4_2.jpg"},
-                { "kep3":"galeria/4_3.jpg"},
-                { "kep4":"galeria/4_4.jpg"}
-        ]
-        },
-        {
-            "szerző": "Zsák Krisztián",
-            "képcím": "Otodik modell",
-            "fotós": "Val Amir",
-            "tervező": "Valaki5",
-            "modell": "Szúrnám Agyon 5",
-            "leírás": "18+ lenne",
-            "nezet": [
-                { "kep1":"galeria/5_1.jpg"},
-                { "kep2":"galeria/5_2.jpg"},
-                { "kep3":"galeria/5_3.jpg"},
-                { "kep4":"galeria/5_4.jpg"}
+                "galeria/4_1.jpg",
+                "galeria/4_2.jpg",
+                "galeria/4_3.jpg",
+                "galeria/4_4.jpg"
         ]
         }
+
 
     ]
 }
