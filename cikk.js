@@ -13,16 +13,23 @@ function $(elem) {
 
 
 function init() {
-
-    ID("cím").innerHTML = "<h1>Cikkek</h1>";
+    
+    ID("cim").innerHTML = "<h1>Fenntarthatósági témahét</h1>";
     valasztas();
-}
 
+
+}
+function valasztas(event) {
+    ID("cikk1").onclick = function () {
+        console.log("katt");
+        olvasas1("cikk");
+    }
+}
 var teszt= [];
 
 function olvasas1(kulcs) {
 
-    fetch("cikk.js")
+    fetch("cikk.json")
     .then ((response => response.json))
     .then ((data) => {
         beolvasas(data[kulcs])
@@ -31,7 +38,15 @@ function olvasas1(kulcs) {
 
 }
 
-function beolvasas() {
+function beolvasas(cikk){
+    console.log(cikk)
+    var txt1 = ''
+    
 
+        txt1 += `<ul>`
+        
+        CLASS('cikkek')[0].innerHTML = txt1;
 
-}
+    }
+   
+

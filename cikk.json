@@ -1,7 +1,7 @@
 {
   "cikkek": [
     {
-      "Szerző": "Botka Bianka (cikkek Szabó Dávid)",
+      "Szerző": "Bevezető",
       "bekezdés": "A Fenntarthatósági Témahét 2022. április 25. és 29. között kerül megrendezésre, amelyet Emberi Erőforrások Minisztériuma hirdet. Minden hazai és határon túli nevelési-oktatási intézmény  csatlakozhat idén a mi iskolánk is újra belevágott.",
       "Főcím": "Mit tervezünk erre a hétre?",
       "bekezdés2": "Könyvcsere; Ruhacsere; Használt póló megújító workshop; Ovisoknak kézműves foglalkozás és versenyek; Divatbemutató és Verseny az osztályok között, aminek a címe tedd zöldebbé a földet.",
@@ -9,7 +9,7 @@
       "Hivatkozás": "Bevezető"
     },
     {
-      "Szerző": "Botka Bianka (cikkek Szabó Dávid)",
+      "Szerző": "Bevezető",
       "Főcím": "Célja?",
       "bekezdés": "A fenntarthatósági témahét célja, hogy megvédjük Földünket az utókor számára az esetleges Globális felmelegedéstől; vízhiánytól; klíma változástól és csökkenő energiakészlet hiányától. Fontos mindenkiben elmélyíteni ezeket a szemléleteket, hiszen mindenki számára fontos a Földünk, és ha nem vigyázunk, rá hamar tönkre megy.",
       "bekezdés2": "Egy előadó idézete: „A Föld nem a miénk, hanem unokáinktól, kaptuk kölcsön.",
@@ -17,8 +17,8 @@
       "Hivatkozás": "Bevezető"
     },
     {
-      "Szerző2": "Vera",
-      "Szerző": "Botka Bianka (cikkek Szabó Dávid)",
+
+      "Szerző": "Bevezető",
       "Főcím": "Az energiánk 20%-a szélerőművekből fog érkezni",
       "kép": "képek/kép1.jpg",
       "bekezdés": "A szélenergia ipar legalább olyan gyorsan növekszik, mint a napelem ipar, ha nem gyorsabban.  Becslések szerint2030-ra globális szinten az energia 20%-a szélerőművekből fog származni.",
@@ -28,28 +28,28 @@
       "Hivatkozás": "https://www.tisztajovo.hu/megujulo-energiaforrasok/2016/10/19/az-energiank-20-a-szeleromuvekbol-fog-erkezni"
     },
     {
-      "Szerző2": "Vera",
-      "Szerző": "Botka Bianka (cikkek Szabó Dávid)",
+      
+      "Szerző": "Bevezető",
       "cím": "Óceánok: mi a szerepük az életben, hogyan óvjuk őket?",
-      "kép": "képek/kép2.jpg",
-      "bekezdés": "Földünk hidroszférájának közel 71 százalékát óceánok borítják. Hatalmas területet fednek le, mégsem kapnak elég figyelmet. Célunk ezen változtatni! Cikkünk szélesíteni kívánja ismereteidet velük kapcsolatban, beutatja, hogy te mit tehetsz védelmük érdekében."
-    
+      
+      "bekezdés": "Földünk hidroszférájának közel 71 százalékát óceánok borítják. Hatalmas területet fednek le, mégsem kapnak elég figyelmet. Célunk ezen változtatni! Cikkünk szélesíteni kívánja ismereteidet velük kapcsolatban, beutatja, hogy te mit tehetsz védelmük érdekében.",
+      "kép": ["képek/kép2.jpg"]
     },
     {
-      "Szerző2": "Vera",
-      "Szerző": "Botka Bianka (cikkek Szabó Dávid)",
+      
+      "Szerző": "Vera",
       "Főcím": "Milyen szerepet töltenek be az óceánok a Föld életében?",
       "bekezdés": "Az óceánok nélkül a bolygó élhetetlen lenne, rengeteg lehetőséget kínálnak a növekedés, a foglalkoztatás és az innováció előmozdítására. "
       
     },
     {
-      "Szerző2": "Vera",
-      "Szerző": "Botka Bianka (cikkek Szabó Dávid)",
+      
+      "Szerző": "Vera",
       "Főcím": "Sürgős megoldásokat kell találnunk példul a klímaváltozás területén, a rohamos hulladék felhalmozódás ellen, de a sort még folytathatnánk…"
     },
     {
-      "Szerző2": "Vera",
-      "Szerző": "Botka Bianka (cikkek Szabó Dávid)",
+     
+      "Szerző": "Vera",
       "Főcím": "Említsünk meg néhány konkrét dolgot: ",
       "felsorolás": "A klímaváltozásnak számos káros hatása van az óceánokra.Ilyen példul a hőmérséklet növekedés. ",
       "felsorolás2": "A bolygónk felmelegedése mögött közvetlenül 93%-ban az óceánok melegedése áll. Mitől is melegszik az óceán? Ezt a jelenséget az üvegházhatású gázok, ezen belül főként a szén-dioxid fokozódó kibocsátása generálja. Ennek következtében egyre több napenergia esik csapdába a légkörben, mely az óceánokba kerülve növeli a víz hőmérsékletét és megváltoztatja körforgását, valamint a sarki jég olvadását eredményezi.",
@@ -61,14 +61,14 @@
       "Hivatkozás": "Alt.isk"
     },
     {
-      "Szerző2": "Vera",
-      "Szerző": "Botka Bianka (cikkek Szabó Dávid)",
+      
+      "Szerző": "Vera",
       "Főcím": "Miért jelentenek óriási problémát az óceánokban végbemenő változások?",
       "bekezdés": "Az óceánokban végbemenő változások több komponensből összeálló problémát jelentenek. A víz körforgására gyakorolt hatás szélsőséges időjárási körülményeket idézhet elő. Normál esetben ez a körforgás eredményezi a víz folyamatos elosztását az óceánokból a légkörbe, szárazföldre, folyókba és tavakba, majd vissza a tengerekbe és az óceánokba. Az éghajlatváltozás nyomán fokozódik a légkörben található vízgőz szintje, emiatt teljes mértékben kiszámíthatatlanná válik az, hogy milyen mértékű lesz a rendelkezésre álló víz mennyisége. Mindezek a körülmények egyes helyeken heves zivatarokat okozhatnak, más térségekben viszont épp az ellenkező hatást érik el: súlyosbodhat az aszályhelyzet, különösen a nyári hónapok alatt, és ez egyes területeken elsivatagosodáshoz vezethet."
     },
     {
-      "Szerző2": "Vera",
-      "Szerző": "Botka Bianka (cikkek Szabó Dávid)",
+      
+      "Szerző": "Vera",
       "Főcím": "Mi várható, ha minden így megy tovább az óceánokban?",
       "bekezdés/felsorolás": "Ha nem teszünk lépéseket az óceánok felmelegedésének és savasodásának megfékezése érdekében, azt kockáztatjuk, hogy az éghajlatszabályozásban betöltött szerepüket fokozatosan elvesztik, a klíma pedig olyan átalakuláson megy át, hogy az az életkörülmények drasztikus leromlásához vezet.",
       "bekezdés/felsorolás2": "Az óceánokban végbemenő változások hatására olvadnak a gleccserek, zsugorodnak a hóval és jéggel borított területek. Felborul a sarkvidéki ökoszisztéma, egyre kisebb térre szorulnak vissza a sarkvidéki állatok és az őslakos emberek. Az olvadás következtében emelkedik a tengerszint, egyre nagyobb területek kerülnek víz alá, mindezek az egymást generáló események pedig az emberi életkörülményeket is ellehetetlenítik: a gazdasági problémák mellett évtizedeken belül a tömeges migrációval is számolni kell.",
@@ -76,14 +76,14 @@
       "bekezdés/felsorolás4": "Az éghajlatváltozás a folyók és tavak átlagos vízhőmérsékletét is fokozatosan növeli, a jégborításos évszakok időtartamát pedig lerövidíti, amely a talajra is káros hatással van: a földben lakozó baktériumok elszaporodnak, a kártevők is szabadabb teret kapnak. E változások jelentősen befolyással lesznek a földművelésre, mezőgazdaságra, és az emberi életminőségre is."
     },
     {
-      "Szerző2": "Vera",
-      "Szerző": "Botka Bianka (cikkek Szabó Dávid)",
+      
+      "Szerző": "Vera",
       "Főcím": "Mi a nemzetközi óceánpolitika álláspontja?",
       "bekezdés": "Alapvető változtatásokat kell kieszközölni rövid időn belül az óceánpolitika tekintetében, ha biztosítani kívánják az emberiség jövőjét – ezért a nemzetközi szervezetek is felkarolták az óceánok ügyét. "
     },
     {
-      "Szerző2": "Vera",
-      "Szerző": "Botka Bianka (cikkek Szabó Dávid)",
+      
+      "Szerző": "Vera",
       "Főcím": "Mit tehetünk az óceánok védelméért?",
       "bekezdés/felsorolás": "Fontos, hogy felismerjük: nem csupán az európai, vagy a nemzetközi szervezetek, politikai nagyhatalmak tehetnek az óceánok ügyéért, hanem mi magunk, személyesen is felelősek vagyunk érte, és egyenként is hozzájárulhatunk a megóvásukhoz, mellyel saját jövőnket is biztosítjuk.",
       "bekezdés/felsorolás2": "Mind egyéni, mind közösségi szinten fontos, hogy csökkentsünk a tengereket érő szennyezést, különösen a szárazföldi tevékenységből eredőket, például a tengeri uszadékot, és a tápanyagterhelést. ",
@@ -95,8 +95,8 @@
       
     },
     {
-      "Szerző2": "Vera",
-      "Szerző": "Botka Bianka (cikkek Szabó Dávid)",
+      
+      "Szerző": "Vera",
       "Főcím": "Mit tehetsz te személy szerint az óceánok védelme érdekében?",
       "bekezdés": "Tájékozódj, legyél nyitott a nemzetközi, hazai környezetvédelmi szervezetek kommunikációjára, olvass minél több cikket, fórumot a témában, és figyeld folyamatosan a sajtóban az ezzel kapcsolatos híreket, intézkedéseket, szabályokat. Ezen információk segítségével kerüld el azon cégek termékeit, amelyek környezetpusztító módon állítják elő termékeiket, vagy túlhalászattal biztosítják a hal beszerzését.",
       "bekezdés2": "Nyaraláskor olyan ajándéktárgyat vásárolj, amiről biztosan tudod, hogy nem úgy állították elő, hogy tengeri állatot gyilkoltak érte. Olyan éttermeket látogass a nyaralás során, ahol fenntartható halászatból készítik az ételeket.",
