@@ -56,7 +56,7 @@
       "felsorolás3": "Az óceánokba futó folyók mellett a parton fekvő települések ipari, mezőgazdasági és kommunális eredetű szennyeződéseivel is számolni kell. A hajók motorjai, szennyvize és a szállított áruk mind tovább fokozzák a szennyezettség mértékét. A vízi közlekedés és szállítás, és az ehhez kapcsolódó balesetek miatt sok olaj kerül a vízbe, ami számos élőlény pusztulását okozza. A légköri ülepedés is szennyezi az óceánok vizét. A szilárd szennyezőkről is szót kell ejteni:  az óceánokon hatalmas szemétszigetek alakultak ki, amelyek javarészt a tengerjáró hajók hulladékából, műanyagból tevődnek össze. A Csendes-óceán északi medencéjében található szemétsziget méretét 700 ezer-15 millió négyzetkilométer közöttire becsülik. ",
       "felsorolás4": "A vízhőmérséklet a tengeri élővilágra drasztikus hatással lehet, a hőmérséklet emelkedése máris nagy változásokat idézett elő a víz alatt, beleértve a tengeri fajok eloszlásának jelentős átrendeződését. Egyes területeken a sótartalom drasztikus növekedése, más közegekben annak csökkenése vezet a fajok kipusztulásához.",
       "bekezdés":"Az imént felsorolt változások, illetve problémák az emberek egészségére is hatással vannak: az emelkedő vízhőmérséklet miatt növekedhet a vízzel terjedő betegségek, például a Balti-tengerben fellépő vibriózis fertőzések kockázata is.",
-      "kép": "képek/vízhasználat.jpg",
+      "kép": ["képek/vízhasználat.jpg"],
       "alcím": "Vízhasználat",
       "Hivatkozás": "Alt.isk"
     },

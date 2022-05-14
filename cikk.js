@@ -22,7 +22,7 @@ function init() {
 function valasztas(event) {
     ID("cikk1").onclick = function () {
         console.log("katt");
-        olvasas1("cikk");
+        olvasas1("cikkek");
     }
 }
 var teszt= [];
