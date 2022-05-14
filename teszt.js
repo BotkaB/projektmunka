@@ -13,7 +13,7 @@ function $(elem) {
 }
 
 function init() {
-
+    
     ID("cim").innerHTML = "<h1>Fenntarthatósági témahét</h1>";
     valasztas();
 
