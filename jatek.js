@@ -16,67 +16,55 @@ const kepek = ["kepek/kep1.jpg", "kepek/kep2.jpg", "kepek/kep3.jpg", "kepek/kep4
 
 
 
-
 function init() {
     ID("cim").innerHTML = "<h1>Memóriajáték</h1>";
     kezdoKep();
-    
+
     ID("gomb").addEventListener("click", function () {
         tablaMeret();
-
     });
-
-
-
-
 }
 
 function adatBeker() {
-
     do {
-        var meret = prompt("Adja meg, hány párral szeretne játszani (min.6-max.20).", 0);
+        var meret = prompt(
+            "Adja meg, hány párral szeretne játszani (min.6-max.20).",
+            0
+        );
     } while (meret < 6 || meret > 20);
     var meret = parseInt(meret) * 2;
 
     return meret;
-
 }
 
 function kezdoKep() {
-
     let tabla = ID("tabla");
 
-
     let html = "";
-    for (i = 0; i < (kepek.length) / 5; i++) {
+    for (i = 0; i < kepek.length / 5; i++) {
+        html += "<tr>";
 
-        html += '<tr>';
-
-        for (j = 0; j < (kepek.length) / 4; j++) {
+        for (j = 0; j < kepek.length / 4; j++) {
             html += "<td>" + "</td>";
-
         }
         html += "</tr>";
     }
     tabla.innerHTML = html;
 
     for (let index = 0; index < kepek.length; index++) {
-
-        $('td')[index].innerHTML = `<img src='kepek/kep${index + 1}.jpg'/>`;
+        $("td")[index].innerHTML = `<img src='kepek/kep${index + 1}.jpg'/>`;
     }
 }
 
 function tablaMeret() {
-
-
     var meret = adatBeker();
 
     let elteltMP = 0;
     let idozito = setInterval(() => {
-        console.log("időzítő");
+        
         let perc = parseInt(elteltMP / 60);
         let sec = elteltMP % 60;
-        console.log(perc + ":" + sec);
+        
         CLASS("ora")[0].innerHTML = perc + ":" + (sec < 10 ? "0" + sec : sec);
         elteltMP++;
         if (parokszama === kepekSzama) {
@@ -89,152 +77,68 @@ function tablaMeret() {
     let html = "";
 
     if (meret <= 15) {
-
-
-        for (i = 0; i < (meret / 4) - 0.5; i++) {
-
-            html += '<tr>';
-
-            for (j = 0; j < (meret / 3) - 0.5; j++) {
-
-
-
-                html += "<td></td>";
-            }
-            html += "</tr>";
-        }
+        tablazat(meret / 4 - 0.5, meret / 3 - 0.5);
     }
     if (meret >= 16 && meret <= 19) {
-
-
-        for (i = 0; i < (meret / 4) - 0.51; i++) {
-
-            html += '<tr>';
-
-            for (j = 0; j < (meret / 4); j++) {
-
-                html += "<td>" + "</td>";
-            }
-            html += "</tr>";
-        }
+        tablazat(meret / 4 - 0.51, meret / 4);
     }
     if (meret >= 20 && meret <= 23) {
-
-
-        for (i = 0; i < (meret / 5) - 0.51; i++) {
-
-            html += '<tr>';
-
-            for (j = 0; j < (meret / 4); j++) {
-
-                html += "<td>" + "</td>";
-            }
-            html += "</tr>";
-        }
+        tablazat(meret / 5 - 0.51, meret / 4);
     }
     if (meret >= 24 && meret <= 27) {
-
-
-        for (i = 0; i < (meret / 5) - 0.51; i++) {
-
-            html += '<tr>';
-
-            for (j = 0; j < (meret / 5); j++) {
-
-                html += "<td>" + "</td>";
-            }
-            html += "</tr>";
-        }
+        tablazat(meret / 5 - 0.51, meret / 5);
     }
     if (meret >= 28 && meret <= 33) {
-
-
-        for (i = 0; i < (meret / 6) - 0.51; i++) {
-
-            html += '<tr>';
-
-            for (j = 0; j < (meret / 5); j++) {
-
-                html += "<td>" + "</td>";
-            }
-            html += "</tr>";
-        }
+        tablazat(meret / 6 - 0.51, meret / 5);
     }
     if (meret >= 34 && meret <= 37) {
-
-
-        for (i = 0; i < (meret / 6) - 0.51; i++) {
-
-            html += '<tr>';
-
-            for (j = 0; j < (meret / 6); j++) {
-
-                html += "<td>" + "</td>";
-            }
-            html += "</tr>";
-        }
+        tablazat(meret / 6 - 0.51, meret / 6);
     }
     if (meret >= 38 && meret <= 40) {
+        tablazat(meret / 7, meret / 6);
+    }
 
+    function tablazat(kulsoDb, besloDb) {
+        for (i = 0; i < kulsoDb; i++) {
+            html += "<tr>";
 
-        for (i = 0; i < (meret / 7); i++) {
-
-            html += '<tr>';
-
-            for (j = 0; j < (meret / 6); j++) {
-
+            for (j = 0; j < besloDb; j++) {
                 html += "<td>" + "</td>";
-
             }
             html += "</tr>";
         }
     }
-
 
     tabla.innerHTML = html;
     for (let index = 0; index < meret; index++) {
-
-        $('td')[index].innerHTML = "<img src='./kepek/hatter.jpg' id='" + index + "'>";
+        $("td")[index].innerHTML =
+            "<img src='./kepek/hatter.jpg' id='" + index + "'>";
     }
-
 
     var kepekSzama = meret / 2;
     var jatszoLista = [];
 
-
     for (let i = 0; i < kepekSzama; i++) {
-
         jatszoLista.push(kepek[i]);
         jatszoLista.push(kepek[i]);
-
     }
     console.log("generálás", jatszoLista);
-
-
 
     for (var i = 0; i < jatszoLista.length; i++) {
         var j = Math.floor(Math.random() * (jatszoLista.length - i)) + i;
         var tmp = jatszoLista[i];
         jatszoLista[i] = jatszoLista[j];
         jatszoLista[j] = tmp;
-
     }
-    console.log("keverés", jatszoLista)
-
+    console.log("keverés", jatszoLista);
     var audio = new Audio('zene.mp3');
     audio.play();
-
-
     $("td").forEach(function (elem) {
         elem.addEventListener("click", function (event) {
             console.log("klikk", event);
             megnez(event);
-        }
-        );
+        });
     });
-
-
-
 
     var parKepTomb = [];
     var parTomb = [];
@@ -243,7 +147,6 @@ function tablaMeret() {
     let parokszama = 0;
 
     function megnez(event) {
-        
         if (parKepTomb.length === 2) {
             return;
         }
@@ -251,7 +154,7 @@ function tablaMeret() {
         let valasztas = parseInt(event.target.id);
         event.target.src = jatszoLista[valasztas];
 
-        if (0 <= valasztas && valasztas < 20) {
+        if (0 <= valasztas && valasztas < 40) {
             parKepTomb.push(jatszoLista[valasztas]);
             parTomb.push(valasztas);
             var kep1 = parseInt(parTomb[0]);
@@ -259,7 +162,7 @@ function tablaMeret() {
             console.log(parTomb);
             console.log(kep1);
         }
-        if (0 <= valasztas && valasztas < 20 && valasztas != kep1) {
+        if (0 <= valasztas && valasztas < 40 && valasztas != kep1) {
             var kep2 = parseInt(parTomb[1]);
             console.log(parKepTomb);
         } else {
@@ -269,9 +172,6 @@ function tablaMeret() {
             console.log(parTomb);
             console.log(kep1);
             console.log(kep2);
-
-
-
         }
         if (parKepTomb.length === 2) {
             lepesszam++;
@@ -287,46 +187,35 @@ function tablaMeret() {
                     jatszoLista.forEach(function (elem) {
                         ID(kep1).style.display = "none";
                         ID(kep2).style.display = "none";
-                    })
+                    });
                     parTomb.splice(0);
                     parKepTomb.splice(0);
                     console.log(parTomb);
                     console.log(parKepTomb);
                 }, 300);
-            }
-
-
-            else {
+            } else {
                 setTimeout(function () {
                     console.log("sebaj");
                     console.log(kep1);
                     console.log(kep2);
 
                     jatszoLista.forEach(function (elem) {
-
-                        $('td')[kep1].innerHTML = "<img src='./kepek/hatter.jpg' id='" + kep1 + "'>";
-                        $('td')[kep2].innerHTML = "<img src='./kepek/hatter.jpg' id='" + kep2 + "'>";
-                    })
+                        $("td")[kep1].innerHTML =
+                            "<img src='./kepek/hatter.jpg' id='" + kep1 + "'>";
+                        $("td")[kep2].innerHTML =
+                            "<img src='./kepek/hatter.jpg' id='" + kep2 + "'>";
+                    });
                     parTomb.splice(0);
                     parKepTomb.splice(0);
                     console.log(parTomb);
                     console.log(parKepTomb);
-
                 }, 1000);
-
             }
-
-
         }
         setTimeout(function () {
             if (parokszama === kepekSzama) {
                 alert("Gratulálok! Vége a játéknak.");
-                kezdoKep();
             }
         }, 201);
-
-
     }
 }
-
-

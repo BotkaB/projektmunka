@@ -1,5 +1,5 @@
-html{    
-    width:auto;
+html {
+    width: auto;
 }
 
 
@@ -11,13 +11,14 @@ body {
 h1 {
     font-size: 30px;
     text-transform: uppercase;
-    color: rgb(234, 26, 26);
-    text-align: center;
+    color: rgb(230, 223, 223);
+    margin-left: 225px;
 
 }
-p{
-    color: white;
-    margin:10px;
+
+p {
+    color: rgb(9, 9, 9);
+    margin: 10px;
     font-size: 15px;
     text-align: center;
 
@@ -45,22 +46,29 @@ main {
 header {
     grid-area: h;
     display: flex;
-    background-color: gray;
+    background-color: rgb(69, 32, 32);
+   
     background-image: url(logo.png);
-
+    background-repeat: no-repeat;
+    background-size: 150px ;
+    background-position: left;
 }
+
 nav {
     grid-area: n;
     display: block;
     background-color: rgb(128, 128, 128);
 }
-.gombok {
-    font-size: 22px;
+
+.gomb {
+    font-size: 25px;
     padding: 10px 20px;
     border: black;
     border-radius: 10px;
-    margin:5%;
-    margin-bottom: 30px;
+    margin: 5px 5px;
+    margin-bottom: 5px;
+    width: 98%;
+    cursor: pointer;
 
 
 }
@@ -69,53 +77,141 @@ nav {
 article {
     grid-area: ar;
     display: block;
-    background-color: white;
+    background-color: rgb(182, 174, 174);
     width: auto;
     height: unset;
 
 }
 
-aside{
-    grid-area: h;
+aside {
+    grid-area: as;
     display: block;
-    background-color: rgb(137, 82, 82);
+    background-color: rgb(173, 151, 151);
     width: auto;
     height: unset;
+    font-size: 18px;
 }
 
-footer{
-    grid-area: h;
+aside p {
+    font-size: 18px;
+}
+
+footer {
+    grid-area: f;
     display: block;
     background-color: gray;
 
 }
 
-nav li, li{
+nav li,
+li {
     list-style-type: none;
-  
+
 }
-nav ul{
+
+nav ul {
     padding-left: 0;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+
 }
-nav a{
-    text-decoration:none ;
+
+nav a {
+    text-decoration: none;
     background-color: rgb(6, 46, 33);
-    text-align:center;
-    display:block;   
+    text-align: center;
+    display: block;
     color: white;
     border-top-style: solid;
     border-bottom-style: solid;
-    border-width:2px;
-    
-    
+    border-width: 2px;
+
+
 }
-nav a:hover{
-    background-color:rgb(233, 234, 231);
+
+nav a:hover {
+    background-color: rgb(233, 234, 231);
     color: black;
+
+
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "h h h h"
+            "n n n n"
+            "ar ar as as"
+            "f f f f";
+    }
+
+    header {
+
+        max-height: 100px;
+
+    }
+
+    article {
+
+        height: unset;
+       
+
+    }
+
+    h1 {
+        font-size: 15px;
+    }
+
+    td {
+        height: 50px;
+        width: 50px;
+    }
+
+    /*table {
+        margin: auto;
+    }*/
+}
+
+@media screen and (max-width: 400px) {
+    main {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "h h"
+            "as n"
+            "ar ar"
+            "f f";
+    }
+
+    header {
+
+        max-height: 80px;
+
+    }
+
+
+    h1 {
+        font-size: 11px;
+    }
+
+    td {
+        height: 30px;
+        width: 30px;
+    }
+    #gomb {
+        font-size: 15px;
+        padding: 10px 20px;
+        border: black;
+        border-radius: 10px;
+        margin:5%;
+        margin-bottom: 10px;
+       
     
+    }
 
 }
