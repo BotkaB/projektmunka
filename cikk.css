@@ -1,27 +1,32 @@
-article{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
+
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+
 }
-*{box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 div {
-    flex: 2 2 100px;
-    /*width: 100px;*/
+  flex: 2 2 100px;
+  /*width: 100px; (ezt sem feltétlen kell megjelenítenem*/
+}
+
+div {
+  padding: 20px;
+  text-align: justify;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+ 
+}
+
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
   }
-  div:first-child {
-    color: black;
-    flex: 0 2 auto;
-  }
-  
-  #masodik{
-      order: 1;
-  }
-  div {
-    border: 1px solid gray;
-    padding: 10px;
-    text-align: justify;
-    font-size: 10px;
-  }
-  
+}

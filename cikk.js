@@ -11,42 +11,21 @@ function $(elem) {
   return document.querySelectorAll(elem);
 }
 
-
 function init() {
-    
-    ID("cim").innerHTML = "<h1>Fenntarthatósági témahét</h1>";
-    valasztas();
-
-
-}
-function valasztas(event) {
-    ID("cikk1").onclick = function () {
-        console.log("katt");
-        olvasas1("cikkek");
-    }
-}
-var teszt= [];
-
-function olvasas1(kulcs) {
-
-    fetch("cikk.json")
-    .then ((response => response.json))
-    .then ((data) => {
-        beolvasas(data[kulcs])
-    })
-
+  ID("cím").innerHTML = "<h1>Fenntarthatósági témahét</h1>";
 
 }
 
-function beolvasas(cikk){
-    console.log(cikk)
-    var txt1 = ''
-    
 
-        txt1 += `<ul>`
-        
-        CLASS('cikkek')[0].innerHTML = txt1;
+//A beolvasásom a script.js- en keresztül fut.
+//Itt azért van, hogyha a script.js-el valami történne innen is be tudja olvasni 
 
-    }
-   
+function beolvasas(cikk) {
+  console.log(cikk);
+  var txt1 = "";
+
+  txt1 += `<ul>`;
+
+  CLASS("cikkek")[0].innerHTML = txt1;
+}
 
