@@ -27,7 +27,7 @@ p {
 
 main {
 
-    max-width: 800px;
+    max-width:800px;
     margin: 0 auto;
     background-color: rgb(206, 201, 201);
     display: grid;
@@ -45,13 +45,15 @@ main {
 
 header {
     grid-area: h;
-    display: flex;
+    display: block;
     background-color: rgb(69, 32, 32);
    
     background-image: url(logo.png);
     background-repeat: no-repeat;
     background-size: 150px ;
     background-position: left;
+    height: unset;
+    width: auto;
 }
 
 nav {
@@ -100,7 +102,9 @@ footer {
     grid-area: f;
     display: block;
     background-color: gray;
-
+    width: auto;
+    height: unset;
+    font-size: 18px;
 }
 
 nav li,
@@ -114,8 +118,8 @@ nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
-
 }
+
 
 nav a {
     text-decoration: none;
@@ -126,7 +130,7 @@ nav a {
     border-top-style: solid;
     border-bottom-style: solid;
     border-width: 2px;
-
+    min-height: 40px;
 
 }
 
@@ -139,79 +143,58 @@ nav a:hover {
 
 @media screen and (max-width: 800px) {
     main {
-        width: 80%;
+        width: 90%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas:
             "h h h h"
             "n n n n"
-            "ar ar as as"
+            "ar ar ar as"
             "f f f f";
     }
 
-    header {
-
-        max-height: 100px;
-
-    }
-
-    article {
-
-        height: unset;
-       
-
-    }
-
+  
     h1 {
-        font-size: 15px;
+ 
+        margin-left: 170px;
+        font-size: 14px;
     }
+ 
 
-    td {
-        height: 50px;
-        width: 50px;
-    }
-
-    /*table {
-        margin: auto;
-    }*/
+ 
 }
 
 @media screen and (max-width: 400px) {
     main {
-        width: 90%;
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "h h"
-            "as n"
+            "n n"
+            "as as"
             "ar ar"
             "f f";
     }
 
-    header {
-
-        max-height: 80px;
-
-    }
-
-
+    
     h1 {
+ 
+        margin-left: 100px;
         font-size: 11px;
     }
 
-    td {
-        height: 30px;
-        width: 30px;
-    }
-    #gomb {
-        font-size: 15px;
-        padding: 10px 20px;
-        border: black;
-        border-radius: 10px;
-        margin:5%;
-        margin-bottom: 10px;
-       
+   
+    nav ul {
+        padding-left: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     
     }
+    header {
+        background-size: 90px ;
+        
+    }
+    
 
 }
