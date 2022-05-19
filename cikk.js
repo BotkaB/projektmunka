@@ -11,6 +11,13 @@ function $(elem) {
   return document.querySelectorAll(elem);
 }
 
+
+
+
+
+
+
+
 function init() {
   ID("cím").innerHTML = "<h1>Fenntarthatósági témahét</h1>";
 
