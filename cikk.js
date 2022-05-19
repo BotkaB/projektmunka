@@ -17,15 +17,26 @@ function init() {
 }
 
 
-//A beolvasásom a script.js- en keresztül fut.
-//Itt azért van, hogyha a script.js-el valami történne innen is be tudja olvasni 
+function beolvasas1(kulcs) {
 
-function beolvasas(cikk) {
-  console.log(cikk);
-  var txt1 = "";
+    fetch("cikk.json")
+    .then((response) => response.json())
+    .then((data) => {
 
-  txt1 += `<ul>`;
+      megjelenít(data[kulcs])
 
-  CLASS("cikkek")[0].innerHTML = txt1;
-}
 
+    })
+  }
+
+  var teszt = [] ;
+
+
+  function megjelenít(cikk) {
+    console.log(cikk);
+    var txt1 = "";
+  
+    txt1 += `<ul>`;
+  
+    CLASS("cikkek")[0].innerHTML = txt1;
+  }
