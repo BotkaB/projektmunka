@@ -12,18 +12,47 @@ function CLASS(elem) {
 }
 
 
-const kepek = ["kepek/kep1.jpg", "kepek/kep2.jpg", "kepek/kep3.jpg", "kepek/kep4.jpg", "kepek/kep5.jpg", "kepek/kep6.jpg", "kepek/kep7.jpg", "kepek/kep8.jpg", "kepek/kep9.jpg", "kepek/kep10.jpg", "kepek/kep11.jpg", "kepek/kep12.jpg", "kepek/kep13.jpg", "kepek/kep14.jpg", "kepek/kep15.jpg", "kepek/kep16.jpg", "kepek/kep17.jpg", "kepek/kep18.jpg", "kepek/kep19.jpg", "kepek/kep20.jpg"];
-
+//const kepek = ["kepek/kep1.jpg", "kepek/kep2.jpg", "kepek/kep3.jpg", "kepek/kep4.jpg", "kepek/kep5.jpg", "kepek/kep6.jpg", "kepek/kep7.jpg", "kepek/kep8.jpg", "kepek/kep9.jpg", "kepek/kep10.jpg", "kepek/kep11.jpg", "kepek/kep12.jpg", "kepek/kep13.jpg", "kepek/kep14.jpg", "kepek/kep15.jpg", "kepek/kep16.jpg", "kepek/kep17.jpg", "kepek/kep18.jpg", "kepek/kep19.jpg", "kepek/kep20.jpg"];
 
 
 function init() {
-    ID("cim").innerHTML = "<h1>Memóriajáték</h1>";
+   
+    ID("cim").innerHTML = "<h1>Fenntarthatósági témahét</h1>";
+    olvasas1("kepek");
+    console.log(kepek);
     kezdoKep();
-
     ID("gomb").addEventListener("click", function () {
         tablaMeret();
     });
+    
 }
+
+var jatek=[];
+
+function olvasas1(kulcs) {
+
+    
+    fetch("jatek.json") 
+        .then((response) => response.json())
+        .then((data) => { 
+
+            jatek = data[kulcs];
+            megjelenit(data[kulcs]);;
+          
+        });
+       
+}
+var kepek=[];
+function megjelenit(jatek) {
+   jatek.forEach(function (elem) {
+
+        kepek.push(`${elem.kep}`);
+
+    })
+  
+    return(kepek);    
+}
+
 
 function adatBeker() {
     do {
@@ -39,19 +68,18 @@ function adatBeker() {
 
 function kezdoKep() {
     let tabla = ID("tabla");
-
     let html = "";
-    for (i = 0; i < kepek.length / 5; i++) {
+    for (i = 0; i < 20 / 5; i++) {
         html += "<tr>";
 
-        for (j = 0; j < kepek.length / 4; j++) {
+        for (j = 0; j < 20 / 4; j++) {
             html += "<td>" + "</td>";
         }
         html += "</tr>";
     }
     tabla.innerHTML = html;
 
-    for (let index = 0; index < kepek.length; index++) {
+    for (let index = 0; index < 20; index++) {
         $("td")[index].innerHTML = `<img src='kepek/kep${index + 1}.jpg'/>`;
     }
 }
