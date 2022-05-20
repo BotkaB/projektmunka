@@ -18,8 +18,8 @@ div:kepek{
     grid-template-columns: 3fr;
     grid-template-areas:
     "h h"
-    "as n"
-    "ar ar"
+    "n n"
+    "as as"
     "ar ar"
     "f f";
     }
