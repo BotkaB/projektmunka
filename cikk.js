@@ -1,7 +1,7 @@
 window.addEventListener("load", init);
 
 function ID(elem) {
-  return document.getElementById(elem);
+  return document.getElementById(elem); //elem azonosítója
 }
 
 function CLASS(elem) {
@@ -11,39 +11,30 @@ function $(elem) {
   return document.querySelectorAll(elem);
 }
 
-
-
-
-
-
-
-
 function init() {
-  ID("cím").innerHTML = "<h1>Fenntarthatósági témahét</h1>";
-
+  ID("cim").innerHTML = "<h1>Fenntarthatósági témahét</h1>";
 }
 
-
-function beolvasas1(kulcs) {
-
-    fetch("cikk.json")
+function init() {
+  fetch("cikk.json")
     .then((response) => response.json())
     .then((data) => {
+      console.log(data.cikkek);
+      megjelenít(data.cikkek);
+    });
+}
 
-      megjelenít(data[kulcs])
+function megjelenít(cikkek) {
+  var txt2 = "";
+  cikkek.forEach(function (cikk) {
+    txt2 += "<ul>";
+    for (const key in cikk) {
+      txt2 += `<li><span>${key}:</span><span> ${cikk[key]}</span></li>`;
+    }
 
+    txt2 += "</ul>";
+  });
 
-    })
-  }
-
-  var teszt = [] ;
-
-
-  function megjelenít(cikk) {
-    console.log(cikk);
-    var txt1 = "";
-  
-    txt1 += `<ul>`;
-  
-    CLASS("cikkek")[0].innerHTML = txt1;
-  }
+  console.log(txt2);
+  CLASS("cikkek")[0].innerHTML = txt2;
+}
