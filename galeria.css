@@ -12,3 +12,19 @@ img{
 div:kepek{
     position: relative;
 }
+
+@media screen and (max-width: 800px){ /*400px alatt milyen legyen a kinézet.*/
+	main{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "h h"
+    "as n"
+    "ar ar"
+    "ar ar"
+    "f f";
+    }
+    .kepek{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
