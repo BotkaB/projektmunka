@@ -17,7 +17,8 @@ const kepek = ["kepek/kep1.jpg", "kepek/kep2.jpg", "kepek/kep3.jpg", "kepek/kep4
 
 
 function init() {
-    ID("cim").innerHTML = "<h1>Memóriajáték</h1>";
+   
+    ID("cim").innerHTML = "<h1>Fenntarthatósági témahét</h1>";
     kezdoKep();
 
     ID("gomb").addEventListener("click", function () {
