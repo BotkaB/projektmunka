@@ -15,7 +15,7 @@ div:kepek{
 
 @media screen and (max-width: 800px){ /*400px alatt milyen legyen a kinézet.*/
 	main{
-    grid-template-columns: 3fr;
+    grid-template-columns: 4fr;
     grid-template-areas:
     "h h"
     "n n"
@@ -25,6 +25,6 @@ div:kepek{
     }
     .kepek{
         display:flex;
-        grid-template-columns: 3fr;
+        grid-template-columns: 4fr;
     }
 }
