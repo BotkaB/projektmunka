@@ -30,6 +30,7 @@ function valasztas(event) {
     ID("kep1").onclick = function () {
         console.log("katt");
         olvasas1("galeria");
+        
     }
     ID("kep2").onclick = function () {
         console.log("katt");
@@ -45,6 +46,10 @@ function valasztas(event) {
     }
 }
 
+
+
+
+
 var teszt = [];
 
 function olvasas1(kulcs) {
@@ -56,6 +61,7 @@ function olvasas1(kulcs) {
 
            
             megjelenit(data[kulcs])
+            leiras(data[kulcs])
 
         })
  
@@ -151,8 +157,6 @@ function megjelenit4(galeria){
     })
     CLASS('kepek')[0].innerHTML = txt1;
 }
-
-
 
 
 

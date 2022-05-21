@@ -1,7 +1,7 @@
 img{
-    width: 220px;
-    height: 340px;
-    padding: 20px;
+    max-width: 220px;
+    max-height: 340px;
+    padding: 10px;
     
 }
 
@@ -24,7 +24,7 @@ div:kepek{
     "f f";
     }
     .kepek{
-        display:flex;
+        /* display:flex; */
         grid-template-columns: 4fr;
     }
 }
