@@ -13,7 +13,7 @@ div:kepek{
     position: relative;
 }
 
-@media screen and (max-width: 800px){ /*400px alatt milyen legyen a kinézet.*/
+@media screen and (max-width: 800px){ /* 800 px alatt milyen legyen a kinézet.*/
 	main{
     grid-template-columns: 4fr;
     grid-template-areas:
